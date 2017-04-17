@@ -1,1 +1,40 @@
-{     "devDependencies": {         "tesseract.js": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-tesseract.js",     "homepage": "https://github.com/npmtest/node-npmtest-tesseract.js",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-tesseract.js.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [tesseract.js (v1.0.10)](https://github.com/naptha/tesseract.js) [![npm package](https://img.shields.io/npm/v/npmtest-tesseract.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tesseract.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tesseract.js.svg)](https://travis-ci.org/npmtest/node-npmtest-tesseract.js)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "tesseract.js": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-tesseract.js",
+    "keywords": [
+        "coverage",
+        "test",
+        "tesseract.js"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_tesseract.js.js",
+    "name": "npmtest-tesseract.js",
+    "nameAlias": "npmtest_tesseract_js",
+    "nameOriginal": "npmtest-tesseract.js",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-tesseract.js.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

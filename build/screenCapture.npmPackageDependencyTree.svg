@@ -19,7 +19,7 @@
 <tspan x="10" y="266">  │   └── object-keys@0.4.0 </tspan>
 <tspan x="10" y="282">  ├─┬ node-fetch@1.6.3 </tspan>
 <tspan x="10" y="298">  │ ├─┬ encoding@0.1.12 </tspan>
-<tspan x="10" y="314">  │ │ └── iconv-lite@0.4.15 </tspan>
+<tspan x="10" y="314">  │ │ └── iconv-lite@0.4.16 </tspan>
 <tspan x="10" y="330">  │ └── is-stream@1.1.0 </tspan>
 <tspan x="10" y="346">  ├── object-assign@4.1.1 </tspan>
 <tspan x="10" y="362">  ├── png.js@0.2.1 </tspan>

@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "test coverage for [tesseract.js (v1.0.10)](https://github.com/naptha/tesseract.js) [![npm package](https://img.shields.io/npm/v/npmtest-tesseract.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tesseract.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tesseract.js.svg)](https://travis-ci.org/npmtest/node-npmtest-tesseract.js)",
+    "description": "#### basic test coverage for  [tesseract.js (v1.0.10)](https://github.com/naptha/tesseract.js)  [![npm package](https://img.shields.io/npm/v/npmtest-tesseract.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tesseract.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tesseract.js.svg)](https://travis-ci.org/npmtest/node-npmtest-tesseract.js)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "tesseract.js": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "2017.4.25"
 }
